@@ -135,7 +135,7 @@ if __name__ == "__main__":
 
 	# Write to file
 	try:
-		write_file(vhdl_filename, libraryTb() + entityTb() + architectureTb() + "\n\0")
+		write_file(vhdl_filename, libraryTb() + entityTb() + architectureTb() + "\n")
 		print '\nEl fitxer "%s" s\'ha creat correctament' % vhdl_filename
 	except Exception as e:
 		print "error: no hem pogut escriure l'arxiu '%s'" % vhdl_filename
